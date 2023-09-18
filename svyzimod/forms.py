@@ -30,3 +30,4 @@ class Dobavity(forms.Form):
 #     imy = forms.ModelChoiceField(Student.objects.all(),required=False)
 #     predmet = forms.ModelChoiceField(Course.objects.all(),required=False)
 # class FormaUser(forms.Form):
+#1111111111111111
