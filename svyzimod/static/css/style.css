@@ -1,0 +1,51 @@
+a{
+    display:block;
+}
+table{
+    text-align: center;
+    border: solid 5px red;
+    margin-left: 200px;
+    font-size: 25px;
+}
+tr{
+     border: solid 5px lime;
+}
+td{
+     border: solid 5px salmon;
+}
+th{
+      border: solid 5px lime;
+}
+/*form{*/
+/*    border: solid 10px red;*/
+/*    width: 200px;*/
+/*    height: 220px;*/
+/*    font-size: 20px;*/
+/*    text-align: center;*/
+/*    background-color: rgba(255, 20, 147, 0.65);*/
+/*    color: yellow;*/
+/*}*/
+input{
+    background-color: darkblue;
+    color: yellow;
+}
+body{
+    background-color: rgba(255, 140, 0, 0.34);
+    text-align: center;
+
+}
+form{
+    margin-top: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    background-color: red;
+    color: yellow;
+}
+button{
+    text-decoration: none;
+    font-size: 25px;
+    color: red;
+    font-family: Arial;
+    margin-top: 20px;
+    background-color: cyan;
+}

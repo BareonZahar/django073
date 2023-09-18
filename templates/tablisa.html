@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица и форма</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+            <h2>Таблица</h2>
+    <table>
+        <tr>
+            {% for t in title %}
+               <th>{{ t }}</th>
+            {% endfor %}
+        </tr>
+        {% for t in table %}
+        <tr>
+             {% for one in t %}
+             <td>{{ one }}</td>
+             <td></td>
+             {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+           <form action="" method="post">
+               {% csrf_token %}
+               {{ forma }}
+               <input type="submit" value="POISK">
+           </form>
+<a class="nazad" href="{% url 'home' %}"><button>На главную</button></a>
+           <br>
+
+{#<table>#}
+{#    <tr><th>ID</th><th>Сок</th><th>Цена</th><th>Обьем упаковки</th><th>Вид упаковки</th></tr>#}
+{#    {% for avt in table %}#}
+{#        <tr>#}
+{#        {% for one in t %}#}
+{##}
+{#         <td>{{ avt.id }}</td>#}
+{#         <td>{{ avt.name }}</td>#}
+{#         <td>{{ avt.price }}</td>#}
+{#         <td>{{ avt.obym_upakov }}</td>#}
+{#         <td>{{ avt.vid_upakov }}</td>#}
+{#         <td>{{ avt.firma }}</td>#}
+{#             <td>{{ one }}</td>#}
+{#         <td><a class="udol" href="{% url 'del' avt.id %}">Удалить</a></td>#}
+{##}
+{#            {% endfor %}#}
+{#        </tr>#}
+{#    {% endfor %}#}
+{##}
+{#</table>#}
+{#<form  method="post">#}
+{#    {% csrf_token %}#}
+{#    {{ fima.as_p }}#}
+{#    <button type="submit">добавить продукт</button>#}
+{#</form>#}
+{#<br>#}
+{#<a  href="{% url 'sv1' %}">На главную</a>#}
+</body>
+</html>
+{#    {% for i in fima %}#}
+{#    <div> {{ i.label_tag }} </div>#}
+{#     <div> {{ i }} </div>#}
+{#    {% endfor %}#}
+{#    <input type="submit" value="Добавить">#}
